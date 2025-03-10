@@ -25,7 +25,7 @@ Currently supported arguments:
 * elasticsearch_url
 * kibana_url
 * cloud_id
-* *_username (kibana and es)
+* *_user (kibana and es)
 * *_password (kibana and es)
 * api_key
 
@@ -498,7 +498,7 @@ python -m detection_rules kibana import-rules -d test-export-rules -o
 
 ### Exporting rules
 
-This command should be run with the `CUSTOM_RULES_DIR` envvar set, that way proper validation is applied to versioning when the rules are downloaded. See the [custom rules docs](docs/custom-rules.md) for more information.
+This command should be run with the `CUSTOM_RULES_DIR` envvar set, that way proper validation is applied to versioning when the rules are downloaded. See the [custom rules docs](docs-dev/custom-rules.md) for more information.
 
 ```
 python -m detection_rules kibana export-rules -h
